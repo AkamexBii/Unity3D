@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 respawnPoint;
     public GameObject fallDetector;
+    public GameObject Checkpoint;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +59,10 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("FallDetector")) 
         {
             transform.position = respawnPoint;
+        }
+        if (other.gameObject.CompareTag("Checkpoint"))
+        {
+            respawnPoint = transform.position;
         }
     }
 
