@@ -6,7 +6,6 @@ public class DeathScript : MonoBehaviour
 {
     public GameObject startPoint;
     public GameObject Player;
-    public GameObject Checkpoint;
 
     // Start is called before the first frame update
     void Start()
@@ -25,10 +24,6 @@ public class DeathScript : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             Player.transform.position = startPoint.transform.position;
-        }
-        else if (other.gameObject.CompareTag("Player") && other.gameObject.CompareTag("Block"))
-        {
-            Player.transform.position = Checkpoint.transform.position;
         }
     }
 }
