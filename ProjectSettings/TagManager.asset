@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - FallDetector
   - Checkpoint
+  - Block
   layers:
   - Default
   - TransparentFX
@@ -43,4 +44,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 1
+    uniqueID: 3595329799
+    locked: 0
+  - name: 2
+    uniqueID: 3769244845
+    locked: 0
+  - name: 3
+    uniqueID: 3697260373
     locked: 0
